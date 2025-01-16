@@ -1,8 +1,9 @@
 import torch
 from torch import nn
 from transformers import LlamaForCausalLM, AutoTokenizer
-from sal.models.reward_models import load_prm
-from sal.search import beam_search
+
+from vllm.model_executor.models.sanl.src.sal.models.reward_models import load_prm
+from vllm.model_executor.models.sanl.src.sal.search import beam_search
 from vllm.attention import PagedAttentionWithRoPE
 from vllm.model_executor.layers import ColumnParallelLinear, RowParallelLinear
 
