@@ -5,6 +5,9 @@ from .interfaces_base import (VllmModelForPooling, VllmModelForTextGeneration,
                               is_pooling_model, is_text_generation_model)
 from .registry import ModelRegistry
 
+from .prm_search import LlamaPRMSearchForCausalLM
+
+_MODELS["LlamaPRMSearchForCausalLM"] = LlamaPRMSearchForCausalLM
 
 __all__ = [
     "ModelRegistry",
