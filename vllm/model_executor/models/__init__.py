@@ -5,6 +5,7 @@ from .interfaces_base import (VllmModelForPooling, VllmModelForTextGeneration,
                               is_pooling_model, is_text_generation_model)
 from .registry import ModelRegistry
 
+
 __all__ = [
     "ModelRegistry",
     "VllmModelForPooling",
@@ -20,3 +21,6 @@ __all__ = [
     "SupportsPP",
     "supports_pp",
 ]
+
+
+
